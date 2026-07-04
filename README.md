@@ -34,11 +34,11 @@ https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci/data
 
 The dataset contains:
 
-- Invoice number
+- Invoice
 - Stock code
-- Product Description
+- Description
 - Quantity
-- Invoice date
+- InvoiceDate
 - Price
 - Customer ID
 - Country
