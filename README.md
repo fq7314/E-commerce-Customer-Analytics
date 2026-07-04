@@ -24,7 +24,7 @@ In this project, I use SQL, Python, Pandas, Jupyter Notebook, and Tableau
 
 The Problem/Goal:
 
-My goal is to turn raw e-commerce data into actual business insights that can help small and mid-sized companies. E-commerce businesses collect a lot of data, but many smaller to mid-sized businesses collect data but are not sure how to understand it. The project shows how SQL, Python, and Tableau can clean data, analyze revenue, show top products, and segment users using RFM analysis. This helps business understand their customers, products, and marketing better.
+My goal is to turn raw e-commerce data into actual business insights that can help small and mid-sized companies. E-commerce businesses tend to collect a lot of data, but many smaller to mid-sized businesses collect data but are not sure how to understand it. The project shows how SQL, Python, and Tableau can clean data, analyze revenue, show top products, and segment users using RFM analysis. This helps business understand their customers, products, and marketing better.
 
 
 
@@ -34,21 +34,14 @@ https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci/data
 
 The dataset contains:
 
-Invoice number
-
-Stock code
-
-Product Description
-
-Quantity
-
-Invoice date
-
-Price
-
-Customer ID
-
-Country
+- Invoice number
+- Stock code
+- Product Description
+- Quantity
+- Invoice date
+- Price
+- Customer ID
+- Country
 
 
 
@@ -77,25 +70,14 @@ Github: Presentation of project/documentation
 Project Components:
 
 E-commerce-Customer-Analytics
-│
-├── data/
-│   └── online_retail_II.csv
-│
-├── sql/
-│   ├── 01_clean.sql
-│   └── 02_revenue_analysis.sql
-│
-├── notebooks/
-│   └── 01_rfm_segmentation.ipynb
-│
-├── dashboards/
-│   ├── rfm_segments.png
-│   ├── rfm_revenue_by_segment.png
-│   ├── rfm_customer_segments.csv
-│   └── rfm_segment_summary.csv
-│
-├── docs/
-│   ├── sql-findings.txt
-│   └── rfm-findings.txt
-│
-└── README.md
+ data/online_retail_II.csv
+ sql/01_clean.sql
+     02_revenue_analysis.sql
+ notebooks/01_rfm_segmentation.ipynb
+ dashboards/rfm_segments.png
+            rfm_revenue_by_segment.png
+            rfm_customer_segments.csv
+            rfm_segment_summary.csv
+ docs/sql-findings.txt
+      rfm-findings.txt
+README.md
