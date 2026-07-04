@@ -1,0 +1,95 @@
+RFM Analysis
+
+What did we do and what did we find
+
+To begin we had to connect sqlite and python, then load the cleaned table (retail_clean) using pandas
+The InvoiceDate column is then made into datetime so we can see the recency of the purchases
+
+We then create a RFM table with each row representing a customer
+The recency measures how many days it has been since customer ordered
+The frequency measures how many orders customers have placed
+The monetary is the amount spend
+
+Once the RFM table is created, we rank the customers from 1-5 for each of their RFM values
+For recency 
+
+The scores are not manually chosen, python uses the distribution of the data to decide each score group.
+It is divided into five 20% groups, ranging from lowest to highest for every rfm based on this they receive 
+a score from 1 - 5.
+
+For Recency, a lower number of days is better, so customers who purchased more recently receive a higher 
+score. For Frequency and Monetary value, higher values are better, so customers who bought more often and
+spent more receive higher scores.
+
+We the combine these scores to segment each customer into Champions, Potential Loyalist, At Risk, Lost, New Customers, and Regular Customers
+Champions
+R >= 4, F >= 4, and M >= 4
+
+Potential Loyalists
+R >= 4 and F >= 2
+
+At-Risk
+R <= 2 and F >= 4
+
+Lost
+R <= 2 and F <= 2
+
+New Customers
+R >= 4 and F = 1
+
+Regular Customers
+Everyone else
+
+Results:
+The RFM analysis grouped 5,878 customers into the customer segments (Champions - Regular).
+
+Segment Counts:
+Regular Customers: 1,647
+Lost: 1,526
+Champions: 1,292
+Potential Loyalists: 892
+At-Risk: 354
+New Customers: 167
+
+
+Customer count graph: 
+Helps compare the size of each customer group (does not show revenue or value), shows distribution of customer base
+
+The chart shows that Regular Customers are the largest segment, with 1,647 customers. Lost Customers are the second, with 1,526 customers. Champions are third, with 1,292 customers. Potential Loyalists, At-Risk Customers, and New Customers have much less customers
+
+Revenue by Segment Graph:
+A chart to show total revenue based on rfm segment. 
+
+A segment may have fewer customers but it can still generate more money depending on how often and how much they spend.
+
+The revenue chart showed that Champions generated the most revenue by far, with about 12.09 million in total revenue. Regular Customers generated about 2.82 million, At-Risk Customers generated about 1.13 million, Potential Loyalists generated about 987 thousand, Lost Customers generated about 668 thousand, and New Customers generated about 56 thousand
+Regular customers were the largest group but champions are most valuable in revenue, this shows that the biggest group may not be the most profitable 
+
+Analysis:
+Note: The average values are summary metrics calculated after customers were segmented; they do not create the segments, but help explain the typical behavior of each group.
+Regular customers had the most at 1647 customers, average recency of 187.54 days, average frequency of 4.40, an average value of $1710.57. This shows some buying history but not as frequent or valuable as champions. The business can aim to move regulars higher by encouraging purchases.
+Lost customers make up 1526 customers, with average recency of 458.75 days, average frequency of 1.25 orders and average monetary value of $437.84. These people have not ordered in a long time and don’t buy often. It is made up of big groups but avoid expensive marketing since their spending and purchase frequency is low.
+Champions are made up of 1292 customers, average recency of 19.73 days, average frequency of 17.13 orders, and average of $9355.60. They purchase the most recent, most often and most money. They are very valuable and need to be provided with good incentives like loyalty rewards, personalized offers, etc.
+Potential Loyalists sit at around 892 customers, avg recency of 25.09 days, average frequency of 3.17 orders, average value of $1107.06. They purchase recently and show repeated purchase behavior however they are not as strong as Champions but have potential to become through encouraging purchases.
+At-risk customers have 354 customers, average of 343.77 days, avg of 7.57 orders, and avg of $3184.27. This group buys often and spends more than a lot of other groups but they have not made recent purchases. They make for a good group to try and bring back using reactivation incentives.
+New customers are the smallest with 167 customers, 29.55 days on avg, avg frequency of 1 order, and an avg of $334.24. This means they bought recently and most likely only once. Business should try to follow up and provide welcome discounts
+Main Business Insight:
+
+The RFM analysis shows that the each segment of customers speak a different story and thus we should tailor to them
+Regular Customers and Lost Customers are the largest groups, but Champions are the most valuable group. Champions generated the most revenue and had the strongest customer behavior. At-Risk Customers are also important because they have strong purchasing behavior in the past but have not returned recently.
+
+The recommendation we can use is to keep a balanced customer strategy and not treat each segment the same (but remember they are all important). 
+
+Champions = protect them
+Regular Customers = grow them
+At-Risk Customers = win them back
+Potential Loyalists/New Customers = develop and encourage them
+Lost Customers = win them back but keep risks in mind
+
+Champions: loyalty rewards, personalized offers, and continued support
+Regular Customers: Encourage more frequent purchases with product recommendations, bundles, and targeted promotions.
+At-Risk Customers: Re-engage them with emails, limited-time discounts, and reminders
+Potential Loyalists: Push them toward loyalty with follow-up offers, loyalty points, and personalized recommendations.
+New Customers: Encourage a second purchase with welcome discounts, product suggestions, or follow-up emails.
+Lost Customers: Use low-cost win-back incentives like discount emails or promotions.
+

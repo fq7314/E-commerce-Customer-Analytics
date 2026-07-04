@@ -1,0 +1,27 @@
+We started with a Online Retail 2 CSV from kaggle also found in data
+
+I started cleaning the data and found:
+- The cleaned dataset contains 805,549 valid purchase rows.
+- The cleaning process removed missing customer IDs, cancelled invoices, returns, and invalid price or quantity rows.
+- A revenue column was created by multiplying Quantity by Price.
+
+Revenue Analysis
+-- Total revenue : $17743429.18
+
+- Monthly revenue seemed to show pattern with the highest revenue in November 2010 at 1,172,336.04.
+- The results showed that Sep to Nov seemed to be high periods, possibly suggesting holiday shopping
+
+
+- The top revenue product was REGENCY CAKESTAND 3 TIER, generating 286,486.30 in revenue.
+- WHITE HANGING HEART T-LIGHT HOLDER was also a major driver, with 252,072.46 in revenue and 93,640 units sold.
+- PAPER CRAFT, LITTLE BIRDIE appears to be a large one-time order because it generated 168,469.60 in revenue from only one order.
+- Some high-revenue rows, such as Manual and POSTAGE, may represent service or charges rather than normal products.
+
+- There were 1,623 one-time buyers, representing 27.61% of all customers.
+- One-time buyers spent an average of 350.08, which gives a baseline for comparing them against repeat buyers.
+
+- Repeat buyers generated about 96.8% of total revenue, while one-time buyers generated only about 3.2%.
+- AVG revenue of one-time: 350.08 , AVG revenue of repeat: 4,036.49
+- This suggests that repeat buyers are the main revenue driver. 
+- This helps us see that allowing one-time buyers to become a repeat buyer heavily increases our sales
+- Both one timers and repeaters buy the product REGENCY CAKESTAND 3 TIER the most
