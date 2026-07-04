@@ -50,25 +50,17 @@ NOTE: THE SQLITE DATABASE IS NOT IN THE REPO AS IT IS TOO LARGE. To recreate the
 
 
 Tools Used:
-
 DBrowser/SQL/SQLite: Data cleaning and revenue analysis, running sql queries
-
 Python: Customer segmenetation/RFM and data analysis
-
-Pandas: Data manipulation 
-
+Pandas: Data manipulation
 Jupyter Notebook:  Step by step analysis
-
 matplotlib: Visualizations 
-
 Tableau: final dashboard
-
 Github: Presentation of project/documentation
 
 
 
 Project Components:
-
 E-commerce-Customer-Analytics
  data/online_retail_II.csv
  sql/01_clean.sql
