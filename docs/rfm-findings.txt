@@ -82,7 +82,7 @@ The recommendation we can use is to keep a balanced customer strategy and not tr
 
 Champions = protect them
 Regular Customers = grow them
-At-Risk Customers = win them back
+At-Risk Customers = win them back/re-engage
 Potential Loyalists/New Customers = develop and encourage them
 Lost Customers = win them back but keep risks in mind
 
