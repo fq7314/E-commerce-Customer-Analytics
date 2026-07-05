@@ -53,15 +53,11 @@ Protect Champions, grow Regular Customers, re-engage At-Risk Customers, develop 
 
 
 Project Components:
-E-commerce-Customer-Analytics
- data/online_retail_II.csv
- sql/01_clean.sql
-     02_revenue_analysis.sql
- notebooks/01_rfm_segmentation.ipynb
- dashboards/rfm_segments.png
-            rfm_revenue_by_segment.png
-            rfm_customer_segments.csv
-            rfm_segment_summary.csv
- docs/sql-findings.txt
-      rfm-findings.txt
+E-commerce-Customer-Analytics/
+data/online_retail_II.csv
+sql/01_clean.sql/02_revenue_analysis.sql
+notebooks/01_rfm_segmentation.ipynb
+dashboards/rfm_segments.png/rfm_revenue_by_segment.png/tableau_dashboard_preview.png
+tableau_data/monthly_revenue.csv/top_products.csv/buyer_type_summary.csv/rfm_customer_segments.csv/rfm_segment_summary.csv
+docs/sql-findings.txt/rfm-findings.txt
 README.md
